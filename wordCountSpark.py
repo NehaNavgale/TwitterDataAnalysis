@@ -5,7 +5,7 @@ import re
 import json
 
 tweets_text = []
-readTweets = open("input/importedTweets.txt", "r")
+readTweets = open("importedTweets.txt", "r")
 for line in readTweets:
     try:
         tweet = json.loads(line)
@@ -34,21 +34,6 @@ def getURLS(text):
 
 urlsText = getURLS(textString)
 
-# print(hashTags)
-# print(urlsText)
-#
-# def linesToWordsFunc(line):
-#     wordsList = line.split()
-#     print(wordsList)
-#     wordsList = [re.sub(r'\W+', '', word) for word in wordsList]
-#     filtered = filter(lambda word: re.match(r'\w+', word), wordsList)
-#     return filtered
-
-# def wordsToPairsFunc(word):
-#     return (word, 1)
-#
-# def reduceToCount(a, b):
-#     return (a + b)
 def getCount(text, fileName):
     conf = SparkConf().setAppName("Words count").setMaster("local")
     sc = SparkContext(conf=conf)
@@ -65,10 +50,6 @@ def getCount(text, fileName):
 def main():
     getCount(hashTags, "hashtagCountSpark.txt")
     getCount(urlsText, "urlCountSpark.txt")
-    # print(countHashtags)
-    # countHashtags.saveAsTextFile("hashtagsCount.txt")
-    # countURLS = getCount(hashTags)
-    # countURLS.saveAsTextFile("urlsCount.txt")
 
 
 if __name__ == "__main__":
