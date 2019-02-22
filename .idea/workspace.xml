@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="30bf8dc3-3a28-498d-9b4f-4dbbc3207867" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/hashtagCountSpark.txt/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/hashtagCountSpark.txt/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/hashtagCountSpark.txt/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/urlCountSpark.txt/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/urlCountSpark.txt/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/urlCountSpark.txt/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parseTweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/parseTweets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/URLsCount/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/URLsCount/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/URLsCount/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/URLsCount/part-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/hashtagsCount/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/hashtagsCount/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/hashtagsCount/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SparkOutput/hashtagsCount/part-00001" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wordCountHadoop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordCountSpark.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,14 +44,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parseTweets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="390">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getTweets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extractedURLs.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extractedHashtags.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -115,6 +145,11 @@
             <path>
               <item name="TwitterDataAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="TwitterDataAnalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TwitterDataAnalysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitterDataAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,16 +328,15 @@
       <workItem from="1550639317906" duration="4571000" />
       <workItem from="1550714164991" duration="8108000" />
       <workItem from="1550792388525" duration="4021000" />
-      <workItem from="1550858305231" duration="195000" />
+      <workItem from="1550858305231" duration="647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37516000" />
+    <option name="totallyTimeSpent" value="37968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21387696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -424,27 +458,9 @@
     <entry file="file://$PROJECT_DIR$/demofile.txt" />
     <entry file="file://$PROJECT_DIR$/mapper.py" />
     <entry file="file://$PROJECT_DIR$/reduce.py" />
-    <entry file="file://$PROJECT_DIR$/wordCountHadoop.py" />
     <entry file="file://$PROJECT_DIR$/tweetsHashtags.txt" />
     <entry file="file://$PROJECT_DIR$/Output/hashtagCountSpark.txt/part-00000" />
     <entry file="file://$PROJECT_DIR$/Output/urlCountSpark.txt/part-00000" />
-    <entry file="file://$PROJECT_DIR$/getTweets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractedURLs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/importedTweets.txt">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="210">
@@ -458,13 +474,6 @@
     <entry file="file://$PROJECT_DIR$/Logs/hadoop-nehanavgale-namenode-Nehas-MBP.kc.umkc.edu.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractedHashtags.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Output/SparkOutput/hashtagsCount/part-00000">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -475,13 +484,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wordCountHadoop.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/parseTweets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="390">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getTweets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractedURLs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractedHashtags.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
