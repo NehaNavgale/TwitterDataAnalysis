@@ -15,13 +15,6 @@ for line in readTweets:
 
 textString = ''.join(tweets_text);
 
-# print(textString);
-
-# print(str(tweets_text));
-
-# hastags = [];
-# re.findall(r"#(\w+)", tweets_text);
-
 def getHashTags(text):
     tags = re.findall(r"#(\w+)", text);
     return tags
