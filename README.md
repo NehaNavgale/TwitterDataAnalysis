@@ -8,6 +8,6 @@ Objective for Phase-1
 1.	Collect Tweets using Twitter’s Streaming APIs (around 100K Tweets) (refer file getTweets.py in Phase 1 folder)
 2.	Extracting Hashtags and URLs from the tweets (refer file parseTweets.py, extractedHashtags.txt and extractedURLs.txt file)
 3.	Running WordCount program using Apache Hadoop and Apache Spark on extracted HashTags and URLs (refer HadoopTwitterOuput and SparkTwitterOutput folder)
-4.	Should collect the log files and output from Hadoop(refer to Logs folder)
+4.	Collect the log files and output from Hadoop(refer to Logs folder)
 
 Please refer to Phase 1 report https://github.com/NehaNavgale/TwitterDataAnalysis/wiki/Phase1
