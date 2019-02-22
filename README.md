@@ -1,8 +1,8 @@
-**Project Objective:
+**Project Objective:**
 
 Our main objective is to develop a system which stores, analyze and visualize the twitter's tweets. We have divided this project into 3 phases.
 
-**Phase 1
+**Phase 1**
 
 Objective for Phase-1
 1.	Collect Tweets using Twitter’s Streaming APIs (around 100K Tweets)
