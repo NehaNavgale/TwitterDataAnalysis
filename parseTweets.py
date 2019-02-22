@@ -10,7 +10,7 @@ for line in readTweets:
         tweets_text.append(tweet["text"])
     except:
         continue
-
+print(len(tweets_text))
 textString = ''.join(tweets_text);
 
 def getHashTags(text):
@@ -21,17 +21,16 @@ def getURLS(text):
     urlText = re.findall(r'(https?://\S+)', text);
     return urlText
 
-
 hashTags = getHashTags(textString);
 urlsText = getURLS(textString);
 
 with open('extractedURLs.txt', 'w') as urlFile:
     for item in urlsText:
         urlFile.write("%s\n" %item)
-#
-# with open('extractedHashtags.txt', 'w') as tagFile:
-#     for item in hashTags:
-#         tagFile.write("%s\n" %item)
-#
+
+with open('extractedHashtags.txt', 'w') as tagFile:
+    for item in hashTags:
+        tagFile.write("%s\n" %item)
+
 
 
