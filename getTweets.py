@@ -24,4 +24,4 @@ class MyStreamListener(StreamListener):
 myStreamListener = MyStreamListener()
 myStream = Stream(auth = py_tweets, listener=myStreamListener)
 
-myStream.filter(track=['happy']);
+myStream.filter(track=['Avengers']);
