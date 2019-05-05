@@ -9,6 +9,7 @@ import { CharactersComponent } from './characters/characters.component';
 import { YearwisechartComponent } from './yearwisechart/yearwisechart.component';
 import { TweetsForMoviesComponent } from './tweets-for-movies/tweets-for-movies.component';
 import { HashtagsComponent } from './hashtags/hashtags.component';
+import { LanguageComponent } from './language/language.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +17,14 @@ import { HashtagsComponent } from './hashtags/hashtags.component';
     CharactersComponent,
     YearwisechartComponent,
     TweetsForMoviesComponent,
-    HashtagsComponent
+    HashtagsComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
     HttpClientModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
