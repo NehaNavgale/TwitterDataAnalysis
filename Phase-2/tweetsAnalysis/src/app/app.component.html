@@ -15,7 +15,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
     <div class="col-md-2" style="position: fixed; padding-top: 10px">
       <ul>
         <li class="list-item">
-          <a href="#countries">Countries</a>
+          <a href="#countries" routerLink="/map">Countries</a>
         </li>
         <li class="list-item">
           <a href="#characters">characters</a>
@@ -34,7 +34,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
     <div class="col-md-10" style="margin-left: 200px;z-index: -50">
       <div class="row" id="countries">
         <div class="col-md-12" style="padding: 10px 10px 10px 10px;">
-          Countries Map here.........
+          <app-map></app-map>
         </div>
       </div>
       <div class="row" id="characters">

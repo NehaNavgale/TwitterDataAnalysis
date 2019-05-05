@@ -9,6 +9,8 @@ import { CharactersComponent } from './characters/characters.component';
 import { YearwisechartComponent } from './yearwisechart/yearwisechart.component';
 import { TweetsForMoviesComponent } from './tweets-for-movies/tweets-for-movies.component';
 import { HashtagsComponent } from './hashtags/hashtags.component';
+import { MapComponent } from './map/map.component';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,15 @@ import { HashtagsComponent } from './hashtags/hashtags.component';
     CharactersComponent,
     YearwisechartComponent,
     TweetsForMoviesComponent,
-    HashtagsComponent
+    HashtagsComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
     HttpClientModule,
-
+    GoogleChartsModule.forRoot('AIzaSyAohWG1VqFhEHkxpXRV77aHYoGyRZB1ktU')
   ],
   providers: [],
   bootstrap: [AppComponent]
