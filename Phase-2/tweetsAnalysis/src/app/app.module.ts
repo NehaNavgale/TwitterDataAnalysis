@@ -8,13 +8,15 @@ import { ChartsModule} from 'ng2-charts';
 import { CharactersComponent } from './characters/characters.component';
 import { YearwisechartComponent } from './yearwisechart/yearwisechart.component';
 import { TweetsForMoviesComponent } from './tweets-for-movies/tweets-for-movies.component';
+import { HashtagsComponent } from './hashtags/hashtags.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharactersComponent,
     YearwisechartComponent,
-    TweetsForMoviesComponent
+    TweetsForMoviesComponent,
+    HashtagsComponent
   ],
   imports: [
     BrowserModule,
