@@ -1,67 +1,55 @@
-<header role="banner">
-  <nav class="navbar bg-success navbar-expand-md static-top">
-    <div class="navbar-collapse">
-      <!--<div class="row">-->
-        <div class="col-2 float-left">
-          <!--<div class="navbar-nav mr-auto bg-img">-->
-          <!--</div>-->
-        </div>
-        <div class="col-8 text-center">
-          <!--<div class="navbar-nav mr-auto text-center">-->
-            <label class="navbar-brand heading">Tweets Trend Analysis</label>
-          <br/>
-          <label class="tagLine navbar-brand">(using Tweets across Globe)</label>
-          <!--</div>-->
-        </div>
-        <div class="col-2 float-right">
-          <!--<div class="navbar-nav mr-auto bg-graph">-->
-          <!--</div>-->
-        </div>
-      <!--</div>-->
-      <!--<div class="row">-->
-        <!--<div class="col-2"></div>-->
-        <div class="col-12 text-center">
-
-        </div>
-        <!--<div class="col-2"></div>-->
-      <!--</div>-->
-    </div>
-  </nav>
-</header>
-<div class="col-12 text-center">
-  <label>Click on below to visualize trends analyzed using Spark</label>
-</div>
-  <div class="m-1 ml-5 row text-center text-white">
-    <div class="circleT text-center m-2 col-sm-1 rounded-circle border border-dark" style="background-color: cornflowerblue;">
-      <label class="m24">Popular Words</label>
-    </div>
-    <div class="circleT text-center m-2  col-sm-1 rounded-circle border border-dark" style="background-color: burlywood">
-      <label class="m24">By Countries</label>
-    </div>
-    <div class="circleT text-center m-2  col-sm-1 rounded-circle border border-dark" style="background-color: antiquewhite">
-      <label class="m24">Top Hashtags</label>
-    </div>
-    <div class="circleT text-center m-2  col-sm-1 rounded-circle border border-dark" style="background-color: bisque">
-      <label class="m24">By Language</label>
-    </div>
-    <div class="circleT text-center m-2 col-sm-1 rounded-circle border border-dark" style="background-color: chocolate">
-      <label class="m24">Top by Followers</label>
-    </div>
-    <div class="circleT text-center m-2 col-sm-1 rounded-circle border border-dark" style="background-color: darkseagreen">
-      <label class="m24">Top by Tweets</label>
-    </div>
-    <div class="circleT text-center m-2 col-sm-1 rounded-circle border border-dark" style="background-color: khaki">
-      <label class="m24">By Month</label>
-    </div>
-    <div class="circleT text-center m-2 col-sm-1 rounded-circle border border-dark" style="background-color: gainsboro">
-      <label class="m24">By Emotion</label>
-    </div>
-    <div class="circleT text-center m-2 col-sm-1 rounded-circle border border-dark" style="background-color: lightgrey">
-      <label class="m24">By Year</label>
-    </div>
-    <div class="circleT text-center m-2 col-sm-1 rounded-circle border border-dark" style="background-color: aquamarine">
-      <label class="m24">By Emotion</label>
+<div class="container-fluid">
+  <div class="row" style="position: fixed;z-index: -1;background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);width: 100%;height: 13%;">
+    <div class="col-md-12">
+      <ul class="nav">
+        <li class="nav-item">
+          <h1 style="color: white;
+    font-family: monospace;
+    padding: 10px 10px 10px 10px;"><b>Twitter Data analysis on Avengers</b></h1>
+        </li>
+      </ul>
     </div>
   </div>
-
-<router-outlet></router-outlet>
+  <div class="row" style="padding-top: 70px;">
+    <div class="col-md-2" style="position: fixed; padding-top: 10px">
+      <ul>
+        <li class="list-item">
+          <a href="#countries">Countries</a>
+        </li>
+        <li class="list-item">
+          <a href="#characters">characters</a>
+        </li>
+        <li class="list-item">
+          <a href="#yearchart">yearchart</a>
+        </li>
+        <li class="list-item">
+          <a href="#yearchart">movies</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-10" style="margin-left: 200px;z-index: -50">
+      <div class="row" id="countries">
+        <div class="col-md-12" style="padding: 10px 10px 10px 10px;">
+          Countries Map here.........
+        </div>
+      </div>
+      <div class="row" id="characters">
+        <div class="col-md-12">
+       <app-characters></app-characters>
+        </div>
+      </div>
+      <div class="row" id="yearchart">
+        <div class="col-md-12">
+          year wise statistics here...........,
+          <app-yearwisechart></app-yearwisechart>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <app-tweets-for-movies></app-tweets-for-movies>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -54,3 +54,7 @@
   background-size: cover;
   position: relative;
 }
+li {
+  list-style-image: url('../assets/Image/twitter.png');
+  list-style-position:outside ;
+}

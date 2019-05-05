@@ -1,18 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChartsModule} from 'ng2-charts';
+import { CharactersComponent } from './characters/characters.component';
+import { YearwisechartComponent } from './yearwisechart/yearwisechart.component';
+import { TweetsForMoviesComponent } from './tweets-for-movies/tweets-for-movies.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CharactersComponent,
+    YearwisechartComponent,
+    TweetsForMoviesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
