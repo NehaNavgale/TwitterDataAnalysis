@@ -8,8 +8,6 @@ import * as am4charts from '@amcharts/amcharts4/charts';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 import am4themes_material from '@amcharts/amcharts4/themes/material';
 
-
-
 /* Chart code */
 // Themes begin
 am4core.useTheme(am4themes_material);
@@ -27,49 +25,51 @@ export class TweetsForMoviesComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 
+  /* Start of Code for Moview*/
   ngOnInit() {
-
-    /*Get data from API*/
     this.http.get('https://pbbackendanalysis.herokuapp.com/api/byMovie').subscribe(data => {
       /*console.log(data)*/
       this.createGraph(data);
     });
-    /*Charts*/
+
   }
-  createGraph(data) {
-    const chart = am4core.create('chartdiv', am4charts.XYChart3D);
-    // Use this, if you want to define your own color set
-    // chart.colors.list = [
-    //   am4core.color('#845EC2'),
-    //   am4core.color('#D65DB1'),
-    //   am4core.color('#FF6F91'),
-    //   am4core.color('#FF9671'),
-    //   am4core.color('#FFC75F'),
-    //   am4core.color('#F9F871')
-    // ];
+ createGraph(data) {
+     const chart = am4core.create('chartdiv', am4charts.XYChart3D);
+     // Use this, if you want to define your own color set
+     // chart.colors.list = [
+     //   am4core.color('#845EC2'),
+     //   am4core.color('#D65DB1'),
+     //   am4core.color('#FF6F91'),
+     //   am4core.color('#FF9671'),
+     //   am4core.color('#FFC75F'),
+     //   am4core.color('#F9F871')
+     // ];
 
-    for(const i in data) {
-      data[i].color = chart.colors.next();
-    }
+     for(const i in data) {
+       data[i].color = chart.colors.next();
+     }
 
-// Add data
-    chart.data =  data;
-// Create axes
-    const categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
-    categoryAxis.dataFields.category = 'Movie';
-    categoryAxis.numberFormatter.numberFormat = '#';
-    categoryAxis.renderer.inversed = true;
+ // Add data
+     chart.data =  data;
+ // Create axes
+     const categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+     categoryAxis.dataFields.category = 'Movie';
+     categoryAxis.numberFormatter.numberFormat = '#';
+     categoryAxis.renderer.inversed = true;
 
-    const  valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+     const  valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
 
-// Create series
-    const series = chart.series.push(new am4charts.ColumnSeries3D());
-    series.dataFields.valueX = 'NumberOfTweets';
-    series.dataFields.categoryY = 'Movie';
-    series.name = 'NumberOfTweets';
-    series.columns.template.propertyFields.fill = 'color';
-    series.columns.template.tooltipText = '{valueX}';
-    series.columns.template.column3D.stroke = am4core.color('#fff');
-    series.columns.template.column3D.strokeOpacity = 0.2;
-  }
+ // Create series
+     const series = chart.series.push(new am4charts.ColumnSeries3D());
+     series.dataFields.valueX = 'NumberOfTweets';
+     series.dataFields.categoryY = 'Movie';
+     series.name = 'NumberOfTweets';
+     series.columns.template.propertyFields.fill = 'color';
+     series.columns.template.tooltipText = '{valueX}';
+     series.columns.template.column3D.stroke = am4core.color('#fff');
+     series.columns.template.column3D.strokeOpacity = 0.2;
+   }
+  /*End of Code for Movies*/
+
+
 }

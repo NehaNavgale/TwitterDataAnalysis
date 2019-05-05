@@ -24,7 +24,10 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
           <a href="#yearchart">yearchart</a>
         </li>
         <li class="list-item">
-          <a href="#yearchart">movies</a>
+          <a href="#movies">movies</a>
+        </li>
+        <li class="list-item">
+          <a href="#languages">Languages</a>
         </li>
         <li class="list-item">
           <a href="#hashtags">Hashtags</a>
@@ -48,9 +51,14 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
           <app-yearwisechart></app-yearwisechart>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="movies">
         <div class="col-md-12">
           <app-tweets-for-movies></app-tweets-for-movies>
+        </div>
+      </div>
+      <div class="row" id="languages">
+        <div class="col-md-12">
+          <app-language></app-language>
         </div>
       </div>
       <div class="row" id="hashtags">

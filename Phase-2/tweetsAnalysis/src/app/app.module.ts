@@ -9,8 +9,10 @@ import { CharactersComponent } from './characters/characters.component';
 import { YearwisechartComponent } from './yearwisechart/yearwisechart.component';
 import { TweetsForMoviesComponent } from './tweets-for-movies/tweets-for-movies.component';
 import { HashtagsComponent } from './hashtags/hashtags.component';
+
 import { MapComponent } from './map/map.component';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { LanguageComponent } from './language/language.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { GoogleChartsModule } from 'angular-google-charts';
     YearwisechartComponent,
     TweetsForMoviesComponent,
     HashtagsComponent,
-    MapComponent
+    MapComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,
