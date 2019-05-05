@@ -35,9 +35,9 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
       </ul>
     </div>
     <div class="col-md-10" style="margin-left: 200px;z-index: -50">
-      <div class="row" id="countries">
-        <div class="col-md-12" style="padding: 10px 10px 10px 10px;">
-          <app-map></app-map>
+      <div class="row">
+        <div class="col-12">
+          <google-chart [type]="'GeoChart'" [data]="geo_data"></google-chart>
         </div>
       </div>
       <div class="row" id="characters">
