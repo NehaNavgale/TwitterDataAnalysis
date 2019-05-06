@@ -12,11 +12,13 @@ export class AppComponent {
   geo_data = [];
   constructor(private http: HttpClient) {this.mapData(); }
   mapData() {
-    this.http.get('https://pbbackendanalysis.herokuapp.com/api/byCountry').subscribe((data: Data[]) => {
+    console.log('inside');
+    this.http.get('https://pbbackendanalysis.herokuapp.com/api/byEndGameLocation').subscribe((data: Data[]) => {
       data.forEach(y => {
-        this.geo_data.push([y.location, y.count]);
+        console.log(y.Location);
+        this.geo_data.push([y.Location, y.NumberOfTweets]);
       });
-      console.log(this.geo_data);
+      console.log('geo' + this.geo_data);
     }, error => {});
   }
 }
