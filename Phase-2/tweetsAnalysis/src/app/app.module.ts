@@ -9,14 +9,21 @@ import { CharactersComponent } from './characters/characters.component';
 import { YearwisechartComponent } from './yearwisechart/yearwisechart.component';
 import { TweetsForMoviesComponent } from './tweets-for-movies/tweets-for-movies.component';
 import { HashtagsComponent } from './hashtags/hashtags.component';
-
+import { EmotionsComponent } from './emotions/emotions.component';
+import { DevicesComponent } from './devices/devices.component';
+import { BaendgameComponent } from './baendgame/baendgame.component';
+import { EndgamecountriesComponent } from './endgamecountries/endgamecountries.component';
 @NgModule({
   declarations: [
     AppComponent,
     CharactersComponent,
     YearwisechartComponent,
     TweetsForMoviesComponent,
-    HashtagsComponent
+    HashtagsComponent,
+    EmotionsComponent,
+    DevicesComponent,
+    BaendgameComponent,
+    EndgamecountriesComponent
   ],
   imports: [
     BrowserModule,

@@ -12,50 +12,91 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
     </div>
   </div>
   <div class="row" style="padding-top: 70px;">
-    <div class="col-md-2" style="position: fixed; padding-top: 10px">
+    <div class="col-md-2" style="position: fixed; padding-top: 25px">
       <ul>
         <li class="list-item">
-          <a href="#countries">Countries</a>
+          <a href="#countries">Top 20 Countries</a>
         </li>
         <li class="list-item">
-          <a href="#characters">characters</a>
-        </li>
-        <li class="list-item">
-          <a href="#yearchart">yearchart</a>
-        </li>
-        <li class="list-item">
-          <a href="#yearchart">movies</a>
+          <a href="#characters">Characters</a>
         </li>
         <li class="list-item">
           <a href="#hashtags">Hashtags</a>
+        </li>
+        <li class="list-item">
+          <a href="#emotions">Emotions</a>
+        </li>
+        <li class="list-item">
+          <a href="#yearwise">Year Wise tweets</a>
+        </li>
+        <li class="list-item">
+          <a href="#devices">Device</a>
+        </li>
+        <li class="list-item">
+          <a href="#avengersmovies">Avengers Movies</a>
+        </li>
+        <li class="list-item">
+          <a href="#beforeafter">Before and after End Game</a>
+        </li>
+        <li class="list-item">
+          <a href="#beforeafter">Tweets by Language</a>
+        </li>
+        <li class="list-item">
+          <a href="#beforeafter">Tweets for End Game for countries</a>
         </li>
       </ul>
     </div>
     <div class="col-md-10" style="margin-left: 200px;z-index: -50">
       <div class="row" id="countries">
-        <div class="col-md-12" style="padding: 10px 10px 10px 10px;">
-          Countries Map here.........
+        <div class="col-md-12" style="padding: 20px 20px 20px 20px;">
+          <h6 style="padding-top: 20px"><b>Tweets for avengers from top 20 countries</b></h6>
+          <app-endgamecountries></app-endgamecountries>
         </div>
       </div>
-      <div class="row" id="characters">
-        <div class="col-md-12">
-       <app-characters></app-characters>
+      <div class="row" id="characters" >
+        <div class="col-md-12" style="padding: 20px 20px 20px 20px">
+          <h6 style="padding-bottom: 20px"><b>Tweets for avengers Characters</b></h6>
+          <app-characters></app-characters>
         </div>
       </div>
-      <div class="row" id="yearchart">
-        <div class="col-md-12">
-          year wise statistics here...........,
+      <div class="row" id="hashtags">
+        <div class="col-md-12" style="padding: 20px 20px 20px 20px">
+          <h6 ><b>Most used #hastags for Avengers</b></h6>
+          <app-hashtags></app-hashtags>
+        </div>
+      </div>
+      <div class="row" id="emotions">
+        <div class="col-md-12"style="padding: 20px 20px 20px 20px">
+          <h6 ><b>Emotions for Avengers</b></h6>
+          <app-emotions></app-emotions>
+        </div>
+      </div>
+      <div class="row" id="yearwise">
+        <div class="col-md-12"style="padding: 20px 20px 20px 20px">
+          <h6 ><b>Year wise tweets for Avengers</b></h6>
           <app-yearwisechart></app-yearwisechart>
+        </div>
+      </div>
+      <div class="row" id="devices">
+        <div class="col-md-12"style="padding: 20px 20px 20px 20px">
+          <h6 ><b> Devices </b></h6>
+          <app-devices></app-devices>
+        </div>
+      </div>
+      <div class="row" id="avengersmovies">
+        <div class="col-md-12"style="padding: 20px 20px 20px 20px">
+          <h6 ><b> Tweets for Avengers movies </b></h6>
+          <app-tweets-for-movies></app-tweets-for-movies>
+        </div>
+      </div>
+      <div class="row" id="beforeafter">
+        <div class="col-md-12"style="padding: 20px 20px 20px 20px">
+          <h6 ><b> Before after End Game </b></h6>
+          <app-baendgame></app-baendgame>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <app-tweets-for-movies></app-tweets-for-movies>
-        </div>
-      </div>
-      <div class="row" id="hashtags">
-        <div class="col-md-12">
-          <app-hashtags></app-hashtags>
         </div>
       </div>
     </div>

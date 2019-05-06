@@ -37,7 +37,7 @@ export class TweetsForMoviesComponent implements OnInit {
     /*Charts*/
   }
   createGraph(data) {
-    const chart = am4core.create('chartdiv', am4charts.XYChart3D);
+    const chart = am4core.create('tweetsformoviechart', am4charts.XYChart3D);
     // Use this, if you want to define your own color set
     // chart.colors.list = [
     //   am4core.color('#845EC2'),
