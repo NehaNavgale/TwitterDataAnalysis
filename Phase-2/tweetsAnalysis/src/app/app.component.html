@@ -56,11 +56,6 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
           <app-endgamecountries></app-endgamecountries>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <google-chart [type]="'GeoChart'" [data]="geo_data"></google-chart>
-        </div>
-      </div>
       <div class="row" id="characters" >
         <div class="col-md-12" style="padding: 20px 20px 20px 20px">
           <h6 style="padding-bottom: 20px"><b>Tweets for avengers Characters</b></h6>
@@ -106,6 +101,11 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
       <div class="row" id="languages">
         <div class="col-md-12">
           <app-language></app-language>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <google-chart [type]="'GeoChart'" [data]="geo_data"></google-chart>
         </div>
       </div>
     </div>
