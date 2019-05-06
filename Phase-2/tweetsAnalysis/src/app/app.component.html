@@ -27,6 +27,9 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
           <a href="#emotions">Emotions</a>
         </li>
         <li class="list-item">
+          <a href="#languages">Languages</a>
+        </li>
+        <li class="list-item">
           <a href="#yearwise">Year Wise tweets</a>
         </li>
         <li class="list-item">
@@ -51,6 +54,11 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
         <div class="col-md-12" style="padding: 20px 20px 20px 20px;">
           <h6 style="padding-top: 20px"><b>Tweets for avengers from top 20 countries</b></h6>
           <app-endgamecountries></app-endgamecountries>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <google-chart [type]="'GeoChart'" [data]="geo_data"></google-chart>
         </div>
       </div>
       <div class="row" id="characters" >
@@ -95,8 +103,9 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
           <app-baendgame></app-baendgame>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="languages">
         <div class="col-md-12">
+          <app-language></app-language>
         </div>
       </div>
     </div>

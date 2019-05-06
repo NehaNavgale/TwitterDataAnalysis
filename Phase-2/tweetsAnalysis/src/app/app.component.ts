@@ -1,15 +1,6 @@
 import { Component } from '@angular/core';
-
-/* charts Imports */
-import * as am4core from '@amcharts/amcharts4/core';
-import * as am4charts from '@amcharts/amcharts4/charts';
-import am4themes_animated from '@amcharts/amcharts4/themes/animated';
-
-
-/* Chart code */
-// Themes begin
-am4core.useTheme(am4themes_animated);
-// Themes end
+import {HttpClient} from '@angular/common/http';
+import {Data} from './locationData';
 
 @Component({
   selector: 'app-root',
@@ -18,4 +9,14 @@ am4core.useTheme(am4themes_animated);
 })
 export class AppComponent {
   title = 'tweetsAnalysis';
+  geo_data = [];
+  constructor(private http: HttpClient) {this.mapData(); }
+  mapData() {
+    this.http.get('https://pbbackendanalysis.herokuapp.com/api/byCountry').subscribe((data: Data[]) => {
+      data.forEach(y => {
+        this.geo_data.push([y.location, y.count]);
+      });
+      console.log(this.geo_data);
+    }, error => {});
+  }
 }

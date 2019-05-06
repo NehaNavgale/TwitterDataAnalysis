@@ -13,6 +13,10 @@ import { EmotionsComponent } from './emotions/emotions.component';
 import { DevicesComponent } from './devices/devices.component';
 import { BaendgameComponent } from './baendgame/baendgame.component';
 import { EndgamecountriesComponent } from './endgamecountries/endgamecountries.component';
+import { MapComponent } from './map/map.component';
+import { GoogleChartsModule } from 'angular-google-charts';
+import { LanguageComponent } from './language/language.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +27,16 @@ import { EndgamecountriesComponent } from './endgamecountries/endgamecountries.c
     EmotionsComponent,
     DevicesComponent,
     BaendgameComponent,
-    EndgamecountriesComponent
+    EndgamecountriesComponent,
+    MapComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
     HttpClientModule,
-
+    GoogleChartsModule.forRoot('AIzaSyAohWG1VqFhEHkxpXRV77aHYoGyRZB1ktU')
   ],
   providers: [],
   bootstrap: [AppComponent]
