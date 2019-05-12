@@ -15,6 +15,8 @@ for line in readTweets:
 
 textString = ''.join(tweets_text);
 
+print(textString)
+
 # print(textString);
 
 # print(str(tweets_text));
@@ -59,12 +61,13 @@ def getCount(text, fileName):
     counts = text_file.flatMap(lambda line: line.split(" ")) \
         .map(lambda word: (word, 1)) \
         .reduceByKey(lambda a, b: a + b)
-    counts.saveAsTextFile("Output/"+fileName)
+    counts.saveAsTextFile("static/Output/"+fileName)
     sc.stop()
 
 def main():
-    getCount(hashTags, "hashtagCountSpark.txt")
-    getCount(urlsText, "urlCountSpark.txt")
+    print('Hello')
+    # getCount(hashTags, "hashtagCountSpark.csv")
+    # getCount(urlsText, "urlCountSpark.csv")
     # print(countHashtags)
     # countHashtags.saveAsTextFile("hashtagsCount.txt")
     # countURLS = getCount(hashTags)
