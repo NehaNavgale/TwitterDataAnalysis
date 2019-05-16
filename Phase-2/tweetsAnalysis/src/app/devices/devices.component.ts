@@ -29,6 +29,20 @@ export class DevicesComponent implements OnInit {
   }
 
   createGraph(data) {
+    function am4themes_myTheme(target) {
+
+      if (target instanceof am4core.ColorSet) {
+        target.list = [
+          am4core.color("#1BA68D"),
+          am4core.color("#E7DA4F"),
+          am4core.color("#E77624"),
+          am4core.color("#DF3520"),
+          am4core.color("#64297B"),
+          am4core.color("#232555")
+        ];
+      }
+    }
+    am4core.useTheme(am4themes_myTheme);
     const chart = am4core.create('devicechart', am4charts.SlicedChart);
     for (const i in data) {
       data[i].color = chart.colors.next();

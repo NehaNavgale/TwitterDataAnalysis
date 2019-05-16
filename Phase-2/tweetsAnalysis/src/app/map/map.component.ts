@@ -13,7 +13,7 @@ export class MapComponent implements OnInit {
   mapData() {
     this.http.get('https://pbbackendanalysis.herokuapp.com/api/byCountry').subscribe((data: Data[]) => {
       data.forEach(y => {
-        this.geo_data.push([y.location, y.count]);
+        this.geo_data.push([y.Location, y.NumberOfTweets]);
       });
       console.log(this.geo_data);
     }, error => {});
