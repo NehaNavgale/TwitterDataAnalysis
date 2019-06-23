@@ -10,9 +10,9 @@ Objective for Phase-1
 3.	Running WordCount program using Apache Hadoop and Apache Spark on extracted HashTags and URLs (refer HadoopTwitterOuput and SparkTwitterOutput folder)
 4.	Collect the log files and output from Hadoop(refer to Logs folder)
 
-Please refer to Phase 1 report https://github.com/NehaNavgale/TwitterDataAnalysis/wiki/Phase1
+Please refer to given link for report https://github.com/NehaNavgale/TwitterDataAnalysis/blob/master/Phase-2/PB_Phase2.pdf
 
-
+................................................................................................................................
 Commmand to download our Dockarized application:
 
 docker pull nehanavgale/twitter:latest
