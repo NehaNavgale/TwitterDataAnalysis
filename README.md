@@ -11,3 +11,10 @@ Objective for Phase-1
 4.	Collect the log files and output from Hadoop(refer to Logs folder)
 
 Please refer to Phase 1 report https://github.com/NehaNavgale/TwitterDataAnalysis/wiki/Phase1
+
+
+Commmand to download our Dockarized application:
+
+docker pull nehanavgale/twitter:latest
+
+docker run -p 4000:80 nehanavgale/twitter:latest
