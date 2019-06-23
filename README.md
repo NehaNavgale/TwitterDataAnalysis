@@ -12,7 +12,7 @@ Objective for Phase-1
 
 Please refer to given link for report https://github.com/NehaNavgale/TwitterDataAnalysis/blob/master/Phase-2/PB_Phase2.pdf
 
-................................................................................................................................
+....................................................................................................................................................................................................................................................................................
 Commmand to download our Dockarized application:
 
 docker pull nehanavgale/twitter:latest
